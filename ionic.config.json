@@ -1,0 +1,7 @@
+{
+  "name": "alfredouribeapp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
