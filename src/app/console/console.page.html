@@ -1,0 +1,50 @@
+  
+<app-header titulo="Console"></app-header>
+
+<ion-content class="ion-no-padding" fullscreen>
+
+    <ion-row class="codeContent">
+        <ion-col size="12">
+            <!-- [innerHTML]="[command[0].command, command[0].result, command[0].description]" -->
+            <div *ngFor="let command of commands" >
+                <div *ngFor="let singleCommand of command">
+                    <ion-item>
+                        <ion-icon name="barcode-outline" slot="start"></ion-icon>
+                        <ion-label>{{singleCommand.command}}</ion-label>
+                    </ion-item>
+
+                    <div class="resultCommand" *ngIf="singleCommand.description" [innerHTML] = "singleCommand.description">
+                        {{singleCommand.description}}
+                    </div>
+
+                    <div class="resultCommand" *ngIf="singleCommand.result" [innerHTML] = "singleCommand.result">
+                        {{singleCommand.result}}
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </ion-col>
+    </ion-row>
+    
+    <ion-row>
+        <ion-col size="12" class="commandWriter">
+            <ion-item>
+                <ion-button  expand="block" fill="clear" shape="round" slot="end" (click)="sendCommand()">
+                    <ion-icon slot="start" name="play"></ion-icon>
+                </ion-button>
+                <ion-input [(ngModel)]="newCommand" placeholder="Write help to get commands"></ion-input>
+            </ion-item>
+            
+            
+        </ion-col>
+    </ion-row>
+    <!-- <ion-fab horizontal="end" vertical="bottom" slot="fixed">
+        <ion-fab-button color="light">
+            <ion-icon md="caret-back" ios="chevron-back-circle-outline"></ion-icon>
+        </ion-fab-button>
+        <ion-fab-list side="start">
+            
+        </ion-fab-list>
+    </ion-fab> -->
+</ion-content>

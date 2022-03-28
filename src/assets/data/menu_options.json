@@ -1,0 +1,14 @@
+[
+    {
+        "icon": "person-circle-outline",
+        "name": "Basic Information",
+        "redirectTo": "index"
+    },
+    {
+        "icon": "code-slash-outline",
+        "name": "Console",
+        "redirectTo": "console"
+    }
+    
+
+]

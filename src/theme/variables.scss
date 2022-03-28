@@ -234,3 +234,22 @@
     --ion-card-background: #1e1e1e;
   }
 }
+
+ion-content{
+  --background: var(--ion-color-dark);
+}
+
+ion-menu > ion-content > ion-list > ion-menu-toggle > ion-item{
+  --background: var(--ion-color-dark-shade);
+  color: var(--ion-color-medium-shade);
+  --border-color: var(--ion-color-light-tint);
+}
+
+ion-menu > ion-header > ion-toolbar{
+  --background: var(--ion-color-dark-shade);
+  --color: var(--ion-color-medium-shade);
+}
+
+ion-menu > ion-content > ion-list {
+  --background: var(--ion-color-dark)!important;
+}

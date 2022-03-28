@@ -1,0 +1,27 @@
+.commandWriter{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.commandWriter > ion-item{
+    --background: black;
+}
+
+.commandWriter > ion-item > ion-input{
+    --background: black;
+    color: white;
+}
+
+.codeContent{
+    margin-top:50px; 
+    max-height: 100vh; 
+    overflow: scroll;
+    padding-bottom: 44px;
+}
+
+.resultCommand{
+    color:aliceblue;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
