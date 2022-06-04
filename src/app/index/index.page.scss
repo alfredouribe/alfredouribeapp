@@ -1,13 +1,14 @@
 .profile-background{
-    background: url('/assets/images/background.jpg');
+    background: url('/assets/images/background.png');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 60vh;
+    background-position: center;
+    height: 100vh;
     opacity: 0.5;
 }
 
 .profile-info{
-    margin-top: -50px!important;
+    margin-top: -80vh!important;
 }
 
 .profile-info ion-avatar{
@@ -22,5 +23,5 @@ h1, h2{
 }
 
 ion-item{
-    --background: rgba(255,255,255,0.8);
+    --background: rgba(255,255,255,1);
 }

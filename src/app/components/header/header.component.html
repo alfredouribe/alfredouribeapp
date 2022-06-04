@@ -2,10 +2,15 @@
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button (click)="mostrarMenu()" expand="block" fill="clear" shape="round">
-        <ion-icon slot="icon-only" name="grid-outline" color="light"></ion-icon>
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
       </ion-button>
       <!-- <ion-back-button defaultHref="/" color="primary"></ion-back-button> -->
     </ion-buttons>
+    
     <ion-title class="ion-text-capitalize">{{titulo}}</ion-title>
+
+    <a href="https://alfredouribe.com/" target="_blank" slot="end">
+      <ion-img src="assets/images/logo.png" style="width: 30px;" ></ion-img>
+    </a>
   </ion-toolbar>
 </ion-header>

@@ -15,13 +15,27 @@
 
 .codeContent{
     margin-top:50px; 
+    min-height: 80vh;
     max-height: 100vh; 
     overflow: scroll;
     padding-bottom: 44px;
+    background: url('/assets/images/background_opacity.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .resultCommand{
     color:aliceblue;
     margin-top: 10px;
     margin-bottom: 10px
+}
+
+.codeContent ion-item{
+    --background: rgba(255,255,255,0);
+}
+
+.codeContent ion-label{
+    font-weight: bold;
+    color: aliceblue;
 }
